@@ -1,0 +1,20 @@
+name: Validate JSON
+description: Validates the given input data against the given JSON schema
+
+inputs:
+  schema-string:
+    description: Stringified JSON schena to validate against
+    type: string
+    required: true
+  json-string:
+    description: Stringified JSON to validate
+    type: string
+    required: true
+
+runs:
+  using: node16
+  main: dist/index.js
+
+branding:
+  icon: "terminal"
+  color: "blue"
